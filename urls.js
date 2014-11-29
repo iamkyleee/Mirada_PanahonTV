@@ -1,0 +1,23 @@
+var theUrls = new Array() // do not change this
+
+
+theUrls[0] = "http://imgur.com/ydTsHUW"
+theUrls[1] = "http://imgur.com/ydTsHUW"
+theUrls[2] = "http://imgur.com/EqRtwLU"
+theUrls[3] = "http://imgur.com/ydTsHUW"
+theUrls[4] = "http://imgur.com/ydTsHUW"
+theUrls[5] = "http://imgur.com/ydTsHUW"
+theUrls[6] = "http://imgur.com/ydTsHUW"
+theUrls[7] = "http://imgur.com/ydTsHUW"
+theUrls[8] = "http://imgur.com/ydTsHUW"
+theUrls[9] = "http://imgur.com/ydTsHUW"
+theUrls[10] = "http://imgur.com/ydTsHUW"
+theUrls[11] = "http://imgur.com/ydTsHUW"
+theUrls[12] = "http://imgur.com/ydTsHUW"
+theUrls[13] = "http://imgur.com/ydTsHUW"
+theUrls[14] = "http://imgur.com/ydTsHUW"
+theUrls[15] = "http://imgur.com/ydTsHUW"
+theUrls[16] = "http://imgur.com/ydTsHUW"
+theUrls[17] = "http://imgur.com/ydTsHUW"
+theUrls[18] = "http://imgur.com/ydTsHUW"
+theUrls[19] = "http://imgur.com/ydTsHUW"

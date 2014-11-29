@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "Mirada - Hack The Climate (PanahonTV) [Beta]",
+	"description":"Our Vision, Your Action",
+	"version":"6.0",
+
+	
+	"permissions": [
+		"tabs", "geolocation","topSites"
+		],
+		
+		
+"content_security_policy": "script-src 'self'; object-src 'self'",            
+   
+   
+	"chrome_url_overrides" : {
+		"newtab":"index.html"
+		}
+	
+	
+
+}

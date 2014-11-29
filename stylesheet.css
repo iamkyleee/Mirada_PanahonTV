@@ -1,0 +1,710 @@
+@charset 'UTF-8';
+
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video
+{
+    font: inherit;
+    font-size: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    border: 0;
+}article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section
+{
+    display: block;
+}body
+{
+    line-height: 1;
+}ol,
+ul
+{
+    list-style: none;
+}blockquote,
+q
+{
+    quotes: none;
+}blockquote:before,
+blockquote:after,
+q:before,
+q:after
+{
+    content: none;
+}table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+
+html
+{
+    font-family: 'NeueHaasGrotDisp-55Roman', 'Century Gothic', 'Tahoma', 'Ubuntu';
+
+    overflow: hidden;
+
+    height: 100%;
+    max-height: 100%;
+
+    background: #1c1c1c;
+}
+
+body
+{
+    max-width: 99%;
+    height: 100%;
+    max-height: 100%;
+
+    cursor: default;
+
+    color: white;
+}
+
+
+
+#time
+{
+    font-family: 'NeueHaasGrotDisp-25XThin','Century Gothic', 'Arial';
+    font-size: 11em;
+
+    z-index: 2;
+
+    width: 100%;
+    margin: 0 auto;
+
+    color: white;
+    text-shadow: 0 0 10px #1c1c1c;
+}
+
+#time:hover
+{
+    opacity: 1;
+}
+
+#timebgs
+{
+    z-index: 0;
+
+    width: inherit;
+    height: 80px;
+
+    opacity: .3;
+    border: 1px solid black;
+    background: black;
+}
+
+
+/*#bg {
+
+-webkit-animation-delay: ;
+-moz-animation-delay: ;
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  
+  
+  
+}
+*/
+#greet
+{
+    font-family: 'NeueHaasGrotDisp-25XThin','Century Gothic','Arial';
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: 1;
+
+    z-index: 2;
+
+    width: 100%;
+    margin: 0 auto;
+
+    opacity: .4;
+    color: white;
+    text-shadow: 0 0 10px #1c1c1c;
+}
+
+
+#timegreet ul li
+{
+    float: none;
+
+    width: 50%;
+    margin: 0 auto;
+
+    -webkit-animation-delay: 0s;
+       -moz-animation-delay: 0s;
+
+    opacity: .8;
+}
+
+#ampm
+{
+    font-size: .2em;
+}
+
+@font-face
+{
+    font-family: NeueHaasGrotDisp-55Roman;
+
+    src: url('NeueHaasGrotDisp-55Roman.otf') format('opentype');
+}
+.NeueHaasGrotDisp-55Roman
+{
+    font-family: NeueHaasGrotDisp-55Roman;
+}
+
+@font-face
+{
+    font-family: NeueHaasGrotDisp-25XThin;
+
+    src: url('NeueHaasGrotDisp-25XThin.otf') format('opentype');
+}
+.NeueHaasGrotDisp-25XThin
+{
+    font-family: NeueHaasGrotDisp-25XThin,  Tahoma !important;
+}
+
+
+
+
+
+#bottombar ul li
+{
+    font-size: 18px;
+
+    float: none;
+
+    margin-bottom: 5px;
+    padding: 3px 3px 3px 3px;
+
+    opacity: .4;
+    color: black;
+    background: white;
+    box-shadow: 0 2px 5px #1c1c1c;
+}
+
+#forecast_embed
+{
+    font-size: 12px;
+
+    float: none;
+
+    width: 200px;
+    height: 30px;
+    margin-bottom: 5px;
+    padding: 3px 3px 3px 3px;
+
+    opacity: .4;
+    color: black;
+    border-radius: 0 4px 4px 0;
+    background: white;
+    box-shadow: 0 2px 5px #1c1c1c;
+}
+
+#bottombar tr td
+{
+    margin-bottom: 5px;
+}
+#bottombar
+{
+    position: fixed;
+    bottom: 10px;
+
+    display: inline-block;
+
+    -webkit-animation-delay: 1s;
+       -moz-animation-delay: 1s;
+}
+
+#btn1
+{
+    font-size: 14pt;
+
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+
+    width: 120px;
+    height: 20px;
+    padding: 4px 4px 4px 4px;
+
+    text-decoration: none;
+
+    opacity: .5;
+    color: black;
+    border-top: 1px dotted gray;
+    border-right: 1px dotted gray;
+    border-left: 1px dotted gray;
+    background: white;
+}
+#bdtn1:hover
+{
+    opacity: 9;
+}
+
+
+
+
+
+#li1
+{
+    width: 120px;
+}
+
+#li2
+{
+    font-size: 16px;
+
+    overflow: hidden;
+
+    width: 200px;
+    height: 16px;
+}
+
+#wm
+{
+    font-family: 'NeueHaasGrotDisp-25XThin';
+    font-size: 24px;
+    font-weight: 100;
+
+    position: absolute;
+    top: 2px;
+    right: 5px;
+
+    overflow: hidden;
+
+    height: 10px;
+
+    text-align: right;
+    text-decoration: none;
+
+    color: white;
+    text-shadow: 0 0 3px #1c1c1c;
+}
+
+#w
+{
+    height: 20px;
+
+    opacity: .4;
+}
+
+
+#ln1
+{
+    display: none;
+
+    width: 800px;
+
+    color: white;
+}
+#sites
+{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+
+    width: 99%;
+    width: 50%;
+    margin: 0 auto;
+    padding: 3px 3px 3px 3px;
+}
+
+#sites td
+{
+    font-family: NeueHaasGrotDisp-25XThin;
+    font-size: 20px;
+    font-weight: 100;
+
+    display: table;
+
+    width: 100px;
+    height: 30px;
+    margin: 3px 3px 3px 3px;
+
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+
+    opacity: .4;
+    color: black;
+    border-radius: 6px 6px 6px 6px;
+    background: white;
+}
+
+#sites td a,
+#sites td a:visited
+{
+    width: 500%;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+#sites td:hover
+{
+    cursor: pointer;
+
+    opacity: .8;
+}
+
+#sites tr
+{
+    margin: 3px 3px 3px 3px;
+    padding: 3px 3px 3px 3px;
+}
+
+#sites table
+{
+    border-spacing: 30px;
+    border-collapse: separate;
+}
+
+
+
+#act td
+{
+    font-family: NeueHaasGrotDisp-25XThin;
+    font-size: 20px;
+    font-weight: 100;
+
+    bottom: 70px;
+
+    display: table;
+
+    width: 80px;
+    height: 30px;
+
+    -webkit-animation-delay: 2s;
+       -moz-animation-delay: 2s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+
+    opacity: .4;
+    color: white;
+    border-radius: 2px 2px 2px 2px;
+}
+
+#act td a,
+#act td a:visited
+{
+    text-decoration: none;
+
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+#act td:hover
+{
+    font-size: 21px;
+
+    cursor: pointer;
+
+    opacity: 1;
+    color: black;
+}
+
+#act td a:hover
+{
+    opacity: 1;
+}
+
+/*
+#overlay{
+	background: -webkit-linear-gradient(rgba(0,0,0,0.4) 5%, rgba(0,0,0,0) 85%) ;
+	background: -moz-linear-gradient(rgba(0,0,0,0.4) 5%, rgba(0,0,0,0) 85%);
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+*/
+
+#overlay
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,.4);
+    background: -moz-linear-gradient(rgba(0,0,0,.4) 5%, rgba(0,0,0,0) 85%);
+}
+
+
+
+#links
+{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#date2
+{
+    font-family: 'NeueHaasGrotDisp-25XThin';
+    font-size: 1.2em;
+    letter-spacing: 1.1;
+
+    margin: 0 auto;
+
+    opacity: .6;
+    text-shadow: 0 0 10px #1c1c1c;
+}
+
+.quoteshare
+{
+    margin-top: 80px;
+}
+
+.quote
+{
+    font-size: 1.5em;
+    letter-spacing: 1;
+    font-weight: 100;
+
+    top: 50%;
+    right: 0;
+    left: 0;
+
+    margin: 0 auto;
+
+    text-align: center;
+    vertical-align: middle;
+
+    opacity: .7;
+    text-shadow: 1px 1px 3px #1c1c1c;
+
+    -webkit-animation-delay: 1.5s; /* Chrome, Safari, Opera */
+    animation-delay: 1.5s;
+}
+.quote p
+{
+    font-size: 1em;
+
+    padding: 10px;
+
+    transition: .3s;
+
+    opacity: .8;
+    border-radius: 10px;
+}
+
+.quote p:hover
+{
+    cursor: pointer;
+
+    opacity: 1;
+}
+
+
+.hide
+{
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+
+    width: 50px;
+    margin: 0 auto;
+    padding: 5px;
+
+    transition: .5s;
+    text-align: center;
+
+    opacity: .8;
+    border-radius: 5px;
+}
+.hide:hover
+{
+    cursor: pointer;
+    transition: .5s;
+
+    opacity: 1;
+}
+
+.share
+{
+    font-family: 'NeueHaasGrotDisp-25XThin';
+    font-size: 32px;
+}
+
+.share table,
+.share tr,
+.share td
+{
+    margin: 0 auto;
+    padding: 10px;
+
+    text-align: center;
+
+    border-radius: 5px;
+}
+
+.share a,
+.share a:visited
+{
+    text-decoration: none;
+
+    color: white;
+}
+
+.share a:hover
+{
+    color: black;
+}
+
+.share td:hover
+{
+    transition: .3s;
+
+    opacity: 1;
+}
+
+.share td:hover a
+{
+    opacity: 1;
+}
+
+.share-fb:hover a
+{
+    opacity: 1;
+    color: #3b5998;
+    text-shadow: 1px 3px 3px #1c1c1c;
+}
+
+.share-tw:hover a
+{
+    opacity: 1;
+    color: #55acee;
+    text-shadow: 1px 3px 3px #1c1c1c;
+}
+
+.absoluteCenter{
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.newQuote{
+    text-align: center;
+    vertical-align: middle;
+    background: red;
+    width: 60%;
+    height: auto;
+}

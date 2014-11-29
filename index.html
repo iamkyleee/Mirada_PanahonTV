@@ -1,0 +1,251 @@
+<!DOCTYPE="HTML">
+<html data-ng-app="ToDo" ng-csp>
+<head>
+<!-- <meta http-equiv="refresh" content="60" > -->
+<meta name="twitter:widgets:csp" content="on"/>
+
+<link href="todo.css" rel="stylesheet" type="css/text"></link>
+<link href="animate.css" rel="stylesheet" ></link>
+<!-- <div class="animated fadeIn" id="bg" ><script src="background.js"></script></div> -->	
+<script src="angular.min.js"></script>
+
+
+<script src="angularjs-geolocation.min.js"></script>
+<script src="angular-reverse-geocode.js"></script>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="jquery.backstretch.min.js"></script>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link href="stylesheet.css" rel="stylesheet" type="css/text"></link>
+<script src="test.js" ></script>
+<script src="date.js"></script>
+<script src="todo.js"></script>
+<script src="urls.js"></script>
+
+</head>
+
+<body>
+
+
+
+	<div class="hide">
+	View Photo
+</div>
+<script src="newbg.js"></script>
+<div id="all">
+<div id="content">
+
+
+<br/><br/>
+<!--date and time -->
+<div id="timegreet">
+<center>
+<ul>
+	<li >
+		<div id="time" class="animated fadeInDown"><script src="datetime.js"></script></div>
+		
+	</li>
+	<li>
+		<div id="greet" class="animated flipInY">
+		<script id="greet" src="greeting.js"></script>
+		</div>
+	</li>
+	<li>
+		<div id="date2" class="animated flipinY">
+		<script  src="date2.js"></script></div>
+	</li>
+	
+	<li>
+		<div class="quoteshare" ng-controller="feedCtrl">
+<div class="quote animated fadeInUp">{{randomQuote}}</div>
+
+
+
+<div class="share" style="display:none">
+	<div class='share-button share-button-bottom' style="display:block;"></div>
+			<script src="share.min.js"></script>
+			<script src="sharer.js"></script>
+
+	<!-- <table>
+	<tr>
+		<td style="dsiplay:none;" class="share-fb">
+			<a href="#"><i class="fa fa-facebook"></i></a>
+		</td>
+		<td style="display:none;" class="share-tw">
+			<a class="twitter-share-button" href="https://twitter.com/share"><script src="tweet.js"></script></a>
+			<script src="tweet.js"></script>
+		</td>
+		
+	</tr>
+	</table> -->
+
+	
+	<ul>
+		<li class="share-fb" style="display:inline;margin-right:25px;">
+			<a href="#"><i class="fa fa-facebook"></i></a>
+		</li>
+		<li class="share-tw" style="display:inline;">
+			<script src="tweet.js"></script>
+			
+		</li>
+		
+	
+	</li>
+
+</div>
+</div>
+	</li>
+	<center>
+		
+		
+	</ul>
+	
+	<!-- <li id="sites" style="list-style-type:none;">
+	
+		<table>
+			<tr>
+				<td><a href="http://www.facebook.com">Facebook</a></td>
+				<td><a href="http://www.youtube.com">Youtube</a></td>
+				<td><a href="http://www.twitter.com">Twitter</a></td>
+			</tr>
+		</table>
+	</li> -->
+
+
+
+</center>
+
+ <div id="bottombar" class="animated slideInLeft " ng-controller="locCtrl">
+ <div id="liweather">
+{{iframeContent}}
+		<!-- <iframe id="forecast_embed" type="text/html" frameborder="3" src="http://forecast.io/embed/#lat=14.599512&lon=120.984219&name=Manila&units=uk"> </iframe> -->
+		<!-- <iframe id="forecast_embed" type="text/html" frameborder="3" ng-src="http://forecast.io/embed/#lat=14.599512&lon=120.984219&name=Manila&units=uk"> </iframe> -->
+ </div>
+ 
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+<!-- background -->
+
+</div></div>
+
+<table id="wm">
+<tr>
+	<td>
+		<div id="w">
+			<ul>
+				<li>mirada</i></li>
+				<li>Kyle Abughanem</li>
+				<li>Rendrick Estrella</li>
+				<li>Reniel Guiao</li>
+		</ul>
+
+		</div>
+	</tr>
+	</table>
+
+	
+
+	<div id="overlay">
+
+	</div>
+	
+	<div id="links">
+		<li id="act" style="list-style-type:none;"><table>
+		<tr>
+			<td class="animated slideInDown"><a href="http://climatechange.denr.gov.ph/">[ Donate ]</a></td>
+		</tr>
+	</table></li>
+	<!-- Quotes -->
+
+
+<!-- Todo List! -->
+
+<div  class="todolist todolist-small animated slideInRight" style="display:none;" 	>
+			<div class="todobtn">
+				<center><b>To Do</b></center>
+			</div>
+		
+			<!-- <div class="closebtn">
+				<p>x</p>
+			</div> -->
+
+<div class="contents" style="display:none;"  data-ng-controller="todoController">
+<div data-ng-view></div>
+	<form name="frm" data-ng-submit="addTodo()">
+		<input class="txtTodo" type="text" name="newTodo" ng-model="newTodo" autocomplete="off" placeholder="Add New Item" required/>
+		<button class="add" data-ng-disabled="frm.$invalid">Add</button>
+		
+	</form><button class="clear" data-ng-click="clearCompleted()">Clear Completed</button>
+	<ul>
+		
+					<li data-ng-repeat="todo in todos track by $index">
+		<table>
+			
+			<tr>
+		
+				<td>
+					<label ><input class="chck" style="margin-right:10px;" type="checkbox" data-ng-model="todo.done">
+				
+					
+					<span class="lbl" data-ng-class="{'done': todo.done}">{{todo.title}}</span></label>
+			
+				</td>
+			
+		</li>	
+			</tr>
+		</table>
+		
+	</ul>
+	</div>
+
+
+
+</div>
+</li></ul></div>
+
+<div class="location" ng-controller="locCtrl" ng-show="showResult()">
+<!-- <span>{{coords}}</span><br>
+<span>{{lat}}</span><br/>
+<span>{{long}}</span><br/> -->
+<!-- <span>{{locString}}</span><br/>
+<span>{{str}}</span>
+<span>{{suc}}</span><br/> -->
+</div>
+
+<!-- <div class="apps"><a href="chrome://apps">Apps</a></div> -->
+	
+
+
+<!-- <div class="newQuote absoluteCenter" data-ng-controller="feedCtrl" >
+	
+	<span>{{randomQuote}}</span>
+</div> -->
+
+<!-- todo button -->
+
+<!-- todo button end -->
+
+<!-- <script src="app.js"></script> -->
+
+<!-- Todo List End -->
+<!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+
+<!-- QUOTE START -->
+
+<!-- QUOTE END -->
+<!--<script src="flickr.js"></script>
+<script type="text/javascript" language="javascript" src="http://api.flickr.com/services/rest/?format=json&sort=randommethod=flickr.photos.search&tags=japan,food&tag_mode=allapi_key=6b9b9f68b6630acaaafa96f1f171314d">
+</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+.todolist{
+	z-index: 99;
+	width: 300px;
+	background: rgba(255,255,255, 0.8);
+	color: black;
+	padding: 10px;
+	position: fixed;
+	margin: 0 auto;
+	bottom: 10px;
+	right: 0px;
+	transition: all 0.5s ease;
+	font-size: 1em;
+	box-shadow: -2px 0px 10px #1c1c1c;
+	opacity: 1;
+	border-radius: 5px 0px 0px 5px;
+	overflow: hidden;
+
+
+}
+
+.todolist:hover{
+	opacity: 1;
+	
+}
+
+.todolist table{
+	color: #1c1c1c;
+}
+
+.todolist table td{
+	padding: 5px;
+}
+
+.done{
+
+	transition: all 0.5s ease;
+	text-decoration: line-through;
+	color: #d1d1d1;
+	}
+
+.todolist ul{
+	z-index: 0;
+	padding: 5px;
+	background: rgba(245,245,245,1);
+	max-height: 200px;
+	overflow: auto;
+	
+}
+
+.todolist ul li{
+	font-weight: 200;
+	padding: 10px;
+	font-size: 1em;
+	color: #666;
+	border-bottom: 1px solid #ddd;
+}
+
+.todolist ul li:hover{
+	background: white;
+	box-shadow: 0px 1px 1px #e1e1e1;
+}		
+
+.txtTodo{
+	background: rgba(255,255,255, 0.8);
+	font-weight: 100;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 15px;
+	font-size: 0.9em;
+	border: none;
+	text-align: center;
+	width: 260px;
+}
+
+.txtTodo:focus{
+	background: rgba(255,255,255, 1);
+	transition: 0.5s;
+	box-shadow: 0px 2px 5px #888;
+	outline: none;
+}
+
+
+.add{
+	
+	padding: 16.5px;
+	height: 100%;
+	border: none;
+	background: #2baf2b;
+	color: white;
+}
+
+.add:hover{
+	transition: 0.3s;
+	background: #42bd41;
+}
+
+.add:disabled{
+	background: #72d572;
+}
+
+.clear{
+	width: 100%;
+	height: 30px;
+	border: none;
+	background: #2baf2b;
+	z-index: 999;
+	color: white;
+}
+
+.clear:hover{
+	background: #42bd41;
+	transition: ease 0.3s all;
+}
+
+.todobtn, .todobtn a{
+	
+	text-decoration: none;
+	color: #666;
+	font-weight: 800;
+}
+
+.todobtn a:hover{
+	color: black;
+}
+
+.todolist-small{
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	max-height: 80%;	
+}
+
+
+
+.closebtn{
+	position: absolute;
+	z-index: 99;
+	top: 10;
+	right: 10;
+}
+
+
+.chck:after{
+	background:red;	
+    margin-left: 5px;
+    display: inline-block;
+	cursor:pointer;
+}
+
+.lbl{
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+	text-decoration: none;
+
+}
+
+
+
